@@ -16,7 +16,9 @@
 .intro-img img{
     /*ajustamdo o img na tela*/
     max-width: 100%;
-    height: auto;
+    height: 100%;
+    margin-bottom: 8.0rem;
+    margin-left: 10rem;
 }
 
 .top3-content{
