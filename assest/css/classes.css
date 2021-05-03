@@ -20,3 +20,7 @@
     min-height: 100vh;
      /*altura minima da seção 920px ou 100vh*/
 }
+
+.menu-spacing{
+    height: 65px;
+}
