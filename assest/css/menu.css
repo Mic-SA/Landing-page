@@ -49,7 +49,8 @@
     transition: all 300ms ease-in-out;
     /*efeito de trasição*/
 
-    /*border-bottom: 0.2rem solid crimson;opção para bordas*/
+    /*border-bottom: 0.2rem solid crimson;
+    opção para bordas*/
 }
 
 .menu ul li a:hover::after{
