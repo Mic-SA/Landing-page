@@ -16,7 +16,8 @@
     <link rel="stylesheet" href="assest/css/menu.css" />
     <link rel="stylesheet" href="assest/css/style.css" />
   </head>
-  <body class="main-bg">
+
+  <body>
     <aside class="menu white-bg">
       <div class="main-content menu-content">
         <h1><a href="#home">LOGO</a></h1>
@@ -27,7 +28,7 @@
             <li><a href="#gallery">gallery</a></li>
             <li><a href="#grid-two">work</a></li>
             <li><a href="#pricing">pricing</a></li>
-            <li><a href="#">contact</a></li>
+            <li><a href="#contact">contact</a></li>
           </ul>
         </nav>
       </div>
@@ -35,7 +36,7 @@
 
     <div class="menu-spacing"></div>
 
-    <section id="home" class="intro man-bg section">
+    <section id="home" class="intro main-bg section">
       <div class="main-content intro-content">
         <div class="intro-text-content">
           <h2>
@@ -83,7 +84,7 @@
       </div>
     </section>
 
-    <section id="grid-one" class="grid-one man-bg section">
+    <section id="grid-one" class="grid-one main-bg section">
       <div class="main-content grid-one-content">
         <h2 class="grid-main-heading">Top 3 Jobs</h2>
         <p class="grid-description">Aqui estão alguns trabalhos recentes.</p>
@@ -154,7 +155,7 @@
       </div>
     </section>
 
-    <section id="grid-two" class="grid-one man-bg section">
+    <section id="grid-two" class="grid-one main-bg section">
       <div class="main-content grid-one-content">
         <h2 class="grid-main-heading">Trabalhos Recentes</h2>
         <p class="grid-description"></p>
@@ -189,6 +190,7 @@
         </div>
       </div>
     </section>
+
     <section id="pricing" class="white-bg section">
       <div class="main-content top3-content">
         <h2>Pricing</h2>
@@ -207,6 +209,7 @@
         </p>
 
           <div class="resposive-table">
+            
         <table>
           <caption>Pricing table</caption>
 
@@ -259,7 +262,59 @@
       </div>
     </section>
 
+     <section id="contact" class="intro main-bg section">
+      <div class="main-content intro-content">
+        <div class="intro-text-content">
+          <h2>
+            Janeiro<br />
+            traz o Firefox 85
+          </h2>
+          <p>
+            Para encerrar janeiro, temos o orgulho de apresentar a vocês o
+            lançamento do Firefox 85. Nesta versão, estamos trazendo a você
+            suporte para o : pseudo-classe visível de foco em CSS e devtools
+            associados, e o remoção completa do suporte a Flash do Firefox.
+          </p>
+        </div>
+        <div class="intro-img">
+          <img
+            src="/assest/img/java.scrip.svg"
+            alt="Homem branco segurando css, mulher segurando js, homem negro segurando HTML"
+          />
+        </div>
+        <div class="contact-form">
+          <fieldset class="form-grid">
+            <legend>Contact me</legend>
 
+            <div class="form-group">
+              <label for="first-name">First</label>
+              <input type="text" nome="first-name" id="first-name" placeholder="Your name">
+            </div>
 
+            <div class="form-group">
+              <label for="last-name">Last</label>
+              <input type="text" nome="last-name" id="last-name" placeholder="Your last name">
+            </div>
+
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" nome="email" id="email" placeholder="Your E-mail">
+            </div>
+
+            <div class="form-group full-width">
+              <label for="message">Message</label>
+              <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message"></textarea>
+
+              <div class="form-group full-width">
+                <button type="submit">Send message</button>
+            </div>
+          </fieldset>
+      </div>
+      </div>
+    </section>
+
+    <footer id="footer" class=" footer white-bg">
+      <p><a target="_blank" href="https://github.com/Mic-SA">Feito com <span class="heart">❤</span> por Michel Silva</a></p>
+    </footer>
   </body>
 </html>
