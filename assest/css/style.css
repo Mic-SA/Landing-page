@@ -4,7 +4,7 @@
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     gap: var (--gap);
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .intro-text-content, .intro-img{
@@ -22,8 +22,53 @@
 .top3-content{
     max-width: 64rem;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     justify-content: center;
     height: 100vh;
     text-align: center;
+}
+
+.grid-one-content{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.grid-main-heading{
+    margin-bottom: 1rem;
+}
+
+.grid-description{
+    padding-bottom: 5rem;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+    counter-reset: grid-counter; /*colocando um contador na grid*/
+}
+
+.grid h3{
+    font-size: 3rem;
+    position: relative;
+    padding-left:  5rem;
+    padding-bottom: 3rem;
+}
+
+.grid h3::before {
+    /*configurando o contador*/
+    counter-increment: grid-counter;
+    content: counter(grid-counter); 
+    position: absolute;
+    font-size: 8rem;
+    font-style: italic;
+    top: -3rem;
+    left: -1.5rem;
+    transform: rotate(5deg);
+     /*para rodar algum elemento*/
+
+
+
 }

@@ -14,7 +14,7 @@
     max-width: 120rem;
      /*1200 pixel da largura do site*/
     margin: 0 auto;
-    padding: var(--gap);
+    padding: 10rem var(--gap);
 }
 
 .section {
