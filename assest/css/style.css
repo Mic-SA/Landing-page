@@ -62,7 +62,7 @@
 .grid h3::before {
     /*configurando o contador*/
     counter-increment: grid-counter;
-    content: counter(grid-counter); 
+    content: counter('grid-counter'); 
     position: absolute;
     font-size: 8rem;
     font-style: italic;
@@ -127,7 +127,7 @@
 
 .form-group input:focus,
 .form-group textarea:focus {
-    box-shadow: 0 0 5px 2px var(--secondary-color);
+    box-shadow: 0 0 5px 2px var(--white-color)
 }
 
 .form-group button{
