@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>landing Page</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet"/>
     <link rel="stylesheet" href="assest/css/variables.css" />
     <link rel="stylesheet" href="assest/css/classes.css" />
@@ -17,11 +17,16 @@
   </head>
 
   <body>
+
+    <input id= "close-menu" class="close-menu" type="checkbox" aria-label="close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
     <aside class="menu white-bg">
       <div class="main-content menu-content">
-        <h1><a href="#home">LOGO</a></h1>
+        <h1 onclick="getElementById('close-menu').checked = false ;"><a href="#home">LOGO</a>
+      </h1>
+        
         <nav>
-          <ul>
+          <ul onclick="getElementById('close-menu').checked = false ;">
             <li><a href="#intro">Introdução</a></li>
             <li><a href="#grid-one">Top 3</a></li>
             <li><a href="#gallery">Galeria</a></li>
@@ -87,6 +92,7 @@
       <div class="main-content grid-one-content">
         <h2 class="grid-main-heading">Top 3 Jobs</h2>
         <p class="grid-description">Aqui estão alguns trabalhos recentes.</p>
+        
         <div class="grid">
           <article>
             <h3>Primeiro</h3>
@@ -315,5 +321,7 @@
     <footer id="footer" class=" footer white-bg">
       <p><a target="_blank" href="https://github.com/Mic-SA">Feito com <span class="heart">❤</span> por Michel Silva</a></p>
     </footer>
+
+    <a class="back-to-top" href="#">➤</a>
   </body>
 </html>

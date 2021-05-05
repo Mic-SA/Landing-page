@@ -9,10 +9,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/*font-family: 'Montserrat', sans-serif;
-font-family: 'Open Sans', sans-serif; 
- google fontes*/
-
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 2rem;
@@ -36,7 +32,6 @@ h1 {
 }
 
 h2 {
-  font-size: 5.5rem;
   font-size: 6rem;
   margin-bottom: 5rem;
   text-transform: uppercase;

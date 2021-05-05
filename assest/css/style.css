@@ -17,9 +17,7 @@
 .intro-img img {
   /*ajustamdo o img na tela*/
   max-width: 100%;
-  height: 100%;
-  margin-bottom: 8rem;
-  margin-left: 10rem;
+  height: auto;
 }
 
 .top3-content {
@@ -57,18 +55,18 @@
   font-size: 3rem;
   position: relative;
   padding-left: 5rem;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
 }
 
 .grid h3::before {
   /*configurando o contador*/
   counter-increment: grid-counter;
-  content: counter("grid-counter");
+  content: counter(grid-counter);
   position: absolute;
   font-size: 8rem;
   font-style: italic;
-  top: -3rem;
-  left: -1.5rem;
+  top: -4rem;
+  left: -2rem;
   transform: rotate(5deg);
   /*para rodar algum elemento*/
 }
@@ -167,6 +165,26 @@
   padding: 3rem;
 }
 
+.close-menu{
+  display: none;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: var(--white-color);
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: var(--primary-color);
+  transform: rotate(-90deg);
+  border: 0.1rem solid var(--primary-color);
+}
+
 @media (max-width: 800px) {
   .intro-content,
   .grid {
@@ -187,5 +205,78 @@
     display: block;
 }
 
+.menu {
+  /*ajustando menu mobile e backt top*/
+  bottom: 0;
+  text-align: center;
 }
+
+.menu-content ul, .menu-content{
+  flex-direction: column;
+  justify-content: center;
+}
+
+.menu-content {
+  height: 100vh;
+}
+
+.menu {
+  display: none;
+}
+
+.close-menu-label::after{ 
+  /*configurando o botão do menu para mobile*/
+  content: '≡';
+  position: fixed;
+  z-index:2;
+  top: 2rem;
+  right: 2rem;
+  background: var(--primary-color);
+  color: var(--white-color);
+  font-size: 3rem;
+  line-height: 3rem;
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.close-menu:checked~.menu{
+  display: block;
+}
+
+.close-menu:checked~.close-menu-label::after{
+  content:'×';
+}
+
+.menu-spacing{
+  display: none;
+}
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.6rem;
+}
+
+h3 {
+  font-size: 3.4rem;
+}
+
+h4 {
+  font-size: 3.2rem;
+}
+
+h5 {
+  font-size: 3rem;
+}
+
+h6 {
+  font-size: 2.8rem;
+}
+}
+
+
 
