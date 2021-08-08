@@ -166,7 +166,7 @@
   padding: 3rem;
 }
 
-.close-menu{
+.close-menu {
   display: none;
 }
 
@@ -200,84 +200,83 @@
 
   .gallery-img img {
     width: 100%;
-}
+  }
 
-.grid-one-content{
+  .grid-one-content {
     display: block;
-}
+  }
 
-.menu {
-  /*ajustando menu mobile e backt top*/
-  bottom: 0;
-  text-align: center;
-}
+  .menu {
+    /*ajustando menu mobile e backt top*/
+    bottom: 0;
+    text-align: center;
+  }
 
-.menu-content ul, .menu-content{
-  flex-direction: column;
-  justify-content: center;
-}
+  .menu-content ul,
+  .menu-content {
+    flex-direction: column;
+    justify-content: center;
+  }
 
-.menu-content {
-  height: 100vh;
-}
+  .menu-content {
+    height: 100vh;
+  }
 
-.menu {
-  display: none;
-}
+  .menu {
+    display: none;
+  }
 
-.close-menu-label::after{ 
-  /*configurando o botão do menu para mobile*/
-  content: '≡';
-  position: fixed;
-  z-index:2;
-  top: 2rem;
-  right: 2rem;
-  background: var(--primary-color);
-  color: var(--white-color);
-  font-size: 3rem;
-  line-height: 3rem;
-  width: 3rem;
-  height: 3rem;
-  text-align: center;
-  padding: 0.5rem;
-  cursor: pointer;
-}
+  .close-menu-label::after {
+    /*configurando o botão do menu para mobile*/
+    content: "≡";
+    position: fixed;
+    z-index: 2;
+    top: 2rem;
+    right: 2rem;
+    background: var(--primary-color);
+    color: var(--white-color);
+    font-size: 3rem;
+    line-height: 3rem;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
 
-.close-menu:checked~.menu{
-  display: block;
-}
+  .close-menu:checked ~ .menu {
+    display: block;
+  }
 
-.close-menu:checked~.close-menu-label::after{
-  content:'×';
-}
+  .close-menu:checked ~ .close-menu-label::after {
+    content: "×";
+  }
 
-.menu-spacing{
-  display: none;
-}
-h1 {
-  font-size: 4rem;
-}
+  .menu-spacing {
+    display: none;
+  }
 
-h2 {
-  font-size: 3.6rem;
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 3.6rem;
+  }
+
+  h3 {
+    font-size: 3.4rem;
+  }
+
+  h4 {
+    font-size: 3.2rem;
+  }
+
+  h5 {
+    font-size: 3rem;
+  }
+
+  h6 {
+    font-size: 2.8rem;
+  }
 }
-
-h3 {
-  font-size: 3.4rem;
-}
-
-h4 {
-  font-size: 3.2rem;
-}
-
-h5 {
-  font-size: 3rem;
-}
-
-h6 {
-  font-size: 2.8rem;
-}
-}
-
-
-
