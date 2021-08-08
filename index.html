@@ -1,233 +1,221 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>landing Page</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
-      rel="stylesheet"/>
-    <link rel="stylesheet" href="assest/css/variables.css" />
-    <link rel="stylesheet" href="assest/css/classes.css" />
-    <link rel="stylesheet" href="assest/css/elements.css" />
-    <link rel="stylesheet" href="assest/css/menu.css" />
-    <link rel="stylesheet" href="assest/css/style.css" />
-  </head>
 
-  <body>
-    
-    <input id= "close-menu" class="close-menu" type="checkbox" aria-label="close menu" role="button">
-    <label class="close-menu-label" for="close-menu" title="close menu"></label>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>landing Page</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="assest/css/variables.css" />
+  <link rel="stylesheet" href="assest/css/classes.css" />
+  <link rel="stylesheet" href="assest/css/elements.css" />
+  <link rel="stylesheet" href="assest/css/menu.css" />
+  <link rel="stylesheet" href="assest/css/style.css" />
+</head>
 
-    <header class="menu white-bg">
-      
-      <div class="main-content menu-content">
-        <h1 onclick="getElementById('close-menu').checked = false ;"><a href="#home">LOGO</a>
+<body>
+
+  <input id="close-menu" class="close-menu" type="checkbox" aria-label="close menu" role="button">
+  <label class="close-menu-label" for="close-menu" title="close menu"></label>
+
+  <header class="menu white-bg">
+
+    <div class="main-content menu-content">
+      <h1 onclick="getElementById('close-menu').checked = false ;"><a href="#home">LOGO</a>
       </h1>
-        
-        <nav>
-          <ul onclick="getElementById('close-menu').checked = false ;">
-            <li><a href="#intro">Introdução</a></li>
-            <li><a href="#grid-one">Top 3</a></li>
-            <li><a href="#gallery">Galeria</a></li>
-            <li><a href="#grid-two">Trabalhos</a></li>
-            <li><a href="#pricing">Preços</a></li>
-            <li><a href="#contact">Contato</a></li>
-          </ul>
-        </nav>
+
+      <nav>
+        <ul onclick="getElementById('close-menu').checked = false ;">
+          <li><a href="#intro">Introdução</a></li>
+          <li><a href="#grid-one">Top 3</a></li>
+          <li><a href="#gallery">Galeria</a></li>
+          <li><a href="#grid-two">Trabalhos</a></li>
+          <li><a href="#pricing">Preços</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="menu-spacing"></div>
+
+  <section id="home" class="intro main-bg section">
+    <div class="main-content intro-content">
+      <div class="intro-text-content">
+        <h2>
+          Janeiro<br />
+          traz o Firefox 85
+        </h2>
+        <p>
+          Para encerrar janeiro, temos o orgulho de apresentar a vocês o
+          lançamento do Firefox 85. Nesta versão, estamos trazendo a você
+          suporte para o : pseudo-classe visível de foco em CSS e devtools
+          associados, e o remoção completa do suporte a Flash do Firefox.
+        </p>
       </div>
-    </header>
+      <div class="intro-img">
+        <img src="/assest/img/java.scrip.svg"
+          alt="Homem branco segurando css, mulher segurando js, homem negro segurando HTML" />
+      </div>
+    </div>
+  </section>
 
-    <div class="menu-spacing"></div>
+  <section id="intro" class="white-bg section">
+    <div class="main-content top3-content">
+      <h2>Os três melhores trabalhos</h2>
+      <p>
+        O lançamento de Macs baseados em silicone da Apple no final do ano
+        passado gerou uma enxurrada de cobertura de notícias e algumas
+        surpresas no desempenho da máquina. Esta postagem detalha algumas
+        informações básicas sobre a experiência de portar o Firefox para rodar
+        nativamente nessas CPUs.
+      </p>
+      <p>
+        Começaremos com algumas informações sobre a transição do Mac e daremos
+        uma visão geral dos componentes internos do Firefox que precisavam
+        saber sobre a nova arquitetura, antes de passar para o conceito de
+        binários universais.
+      </p>
+      <p>
+        We’ll then explain how DRM/EME works on the new platform, talk about
+        our experience with macOS Big Sur, and discuss various updater
+        problems we had to deal with. We’ll conclude with the release and an
+        overview of various other improvements that are in the pipeline.
+      </p>
+    </div>
+  </section>
 
-    <section id="home" class="intro main-bg section">
-      <div class="main-content intro-content">
-        <div class="intro-text-content">
-          <h2>
-            Janeiro<br />
-            traz o Firefox 85
-          </h2>
+  <section id="grid-one" class="grid-one main-bg section">
+    <div class="main-content grid-one-content">
+      <h2 class="grid-main-heading">Top 3 Jobs</h2>
+      <p class="grid-description">Aqui estão alguns trabalhos recentes.</p>
+
+      <div class="grid">
+        <article>
+          <h3>Primeiro</h3>
           <p>
-            Para encerrar janeiro, temos o orgulho de apresentar a vocês o
-            lançamento do Firefox 85. Nesta versão, estamos trazendo a você
-            suporte para o : pseudo-classe visível de foco em CSS e devtools
-            associados, e o remoção completa do suporte a Flash do Firefox.
+            Este botão adicionaria uma caixa à linha de caixas de conteúdo-chave abaixo do texto de introdução. Isso
+            deve colocar a caixa lá, independentemente de onde o usuário está escrevendo no momento.
           </p>
-        </div>
-        <div class="intro-img">
-          <img
-            src="/assest/img/java.scrip.svg"
-            alt="Homem branco segurando css, mulher segurando js, homem negro segurando HTML"
-          />
-        </div>
+        </article>
+        <article>
+          <h3>Segundo</h3>
+          <p>
+            Eu sugiro ter um pop-up que pergunta onde na linha inserir a caixa (no início ou no final), qual título dar
+            à caixa, que texto colocar na caixa e para onde a caixa deve ter um link. A caixa inteira deve servir como
+            um link para a página de destino
+          </p>
+        </article>
+        <article>
+          <h3>Terceiro</h3>
+          <p>
+            Você também pode incluir um atributo de tipo contendo o tipo MIME do recurso, para que um navegador possa
+            ver rapidamente quais recursos estão em oferta e ignorar aqueles que não são compatíveis
+          </p>
+        </article>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="intro" class="white-bg section">
-      <div class="main-content top3-content">
-        <h2>Os três melhores trabalhos</h2>
-        <p>
-          O lançamento de Macs baseados em silicone da Apple no final do ano
-          passado gerou uma enxurrada de cobertura de notícias e algumas
-          surpresas no desempenho da máquina. Esta postagem detalha algumas
-          informações básicas sobre a experiência de portar o Firefox para rodar
-          nativamente nessas CPUs.
-        </p>
-        <p>
-          Começaremos com algumas informações sobre a transição do Mac e daremos
-          uma visão geral dos componentes internos do Firefox que precisavam
-          saber sobre a nova arquitetura, antes de passar para o conceito de
-          binários universais.
-        </p>
-        <p>
-          We’ll then explain how DRM/EME works on the new platform, talk about
-          our experience with macOS Big Sur, and discuss various updater
-          problems we had to deal with. We’ll conclude with the release and an
-          overview of various other improvements that are in the pipeline.
-        </p>
-      </div>
-    </section>
+  <section id="gallery" class="grid-one white-bg section">
+    <div class="main-content grid-one-content">
+      <h2 class="grid-main-heading">Gallery</h2>
+      <p class="grid-description">Aqui estão algumas das minhas fotos.</p>
 
-    <section id="grid-one" class="grid-one main-bg section">
-      <div class="main-content grid-one-content">
-        <h2 class="grid-main-heading">Top 3 Jobs</h2>
-        <p class="grid-description">Aqui estão alguns trabalhos recentes.</p>
-        
-        <div class="grid">
-          <article>
-            <h3>Primeiro</h3>
-            <p>
-              Este botão adicionaria uma caixa à linha de caixas de conteúdo-chave abaixo do texto de introdução. Isso deve colocar a caixa lá, independentemente de onde o usuário está escrevendo no momento.
-            </p>
-          </article>
-          <article>
-            <h3>Segundo</h3>
-            <p>
-              Eu sugiro ter um pop-up que pergunta onde na linha inserir a caixa (no início ou no final), qual título dar à caixa, que texto colocar na caixa e para onde a caixa deve ter um link. A caixa inteira deve servir como um link para a página de destino
-            </p>
-          </article>
-          <article>
-            <h3>Terceiro</h3>
-            <p>
-              Você também pode incluir um atributo de tipo contendo o tipo MIME do recurso, para que um navegador possa ver rapidamente quais recursos estão em oferta e ignorar aqueles que não são compatíveis
-            </p>
-          </article>
+      <div class="grid">
+        <div class="gallery-img">
+          <img src="https://source.unsplash.com/random/360x360?r=1" alt="random image from unsplash" />
+        </div>
+        <div class="gallery-img">
+          <img src="https://source.unsplash.com/random/360x360?r=2" alt="random image from unsplash" />
+        </div>
+        <div class="gallery-img">
+          <img src="https://source.unsplash.com/random/360x360?r=3" alt="random image from unsplash" />
+        </div>
+        <div class="gallery-img">
+          <img src="https://source.unsplash.com/random/360x360?r=4'
+            alt=" random image from unsplash">
+        </div>
+        <div class="gallery-img">
+          <img src="https://source.unsplash.com/random/360x360?r=5" alt="random image from unsplash" />
+        </div>
+        <div class="gallery-img">
+          <img src="https://source.unsplash.com/random/360x360?r=6" alt="random image from unsplash" />
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="gallery" class="grid-one white-bg section">
-      <div class="main-content grid-one-content">
-        <h2 class="grid-main-heading">Gallery</h2>
-        <p class="grid-description">Aqui estão algumas das minhas fotos.</p>
-
-        <div class="grid">
-          <div class="gallery-img">
-            <img
-              src="https://source.unsplash.com/random/360x360?r=1"
-              alt="random image from unsplash"
-            />
-          </div>
-          <div class="gallery-img">
-            <img
-              src="https://source.unsplash.com/random/360x360?r=2"
-              alt="random image from unsplash"
-            />
-          </div>
-          <div class="gallery-img">
-            <img
-              src="https://source.unsplash.com/random/360x360?r=3"
-              alt="random image from unsplash"
-            />
-          </div>
-          <div class="gallery-img">
-            <img src="https://source.unsplash.com/random/360x360?r=4'
-            alt="random image from unsplash">
-          </div>
-          <div class="gallery-img">
-            <img
-              src="https://source.unsplash.com/random/360x360?r=5"
-              alt="random image from unsplash"
-            />
-          </div>
-          <div class="gallery-img">
-            <img
-              src="https://source.unsplash.com/random/360x360?r=6"
-              alt="random image from unsplash"
-            />
-          </div>
-        </div>
+  <section id="grid-two" class="grid-one main-bg section">
+    <div class="main-content grid-one-content">
+      <h2 class="grid-main-heading">Trabalhos Recentes</h2>
+      <p class="grid-description"></p>
+      <div class="grid">
+        <article>
+          <h3>Uma boa</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla
+            corporis facere error enim veritatis, voluptatibus magni, dolor
+            voluptates obcaecati adipisci debitis harum aspernatur omnis
+            culpa, in voluptate alias expedita. Harum?
+          </p>
+        </article>
+        <article>
+          <h3>Bom trabalho</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla
+            corporis facere error enim veritatis, voluptatibus magni, dolor
+            voluptates obcaecati adipisci debitis harum aspernatur omnis
+            culpa, in voluptate alias expedita. Harum?
+          </p>
+        </article>
+        <article>
+          <h3>Ao melhor</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla
+            corporis facere error enim veritatis, voluptatibus magni, dolor
+            voluptates obcaecati adipisci debitis harum aspernatur omnis
+            culpa, in voluptate alias expedita. Harum?
+          </p>
+        </article>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="grid-two" class="grid-one main-bg section">
-      <div class="main-content grid-one-content">
-        <h2 class="grid-main-heading">Trabalhos Recentes</h2>
-        <p class="grid-description"></p>
-        <div class="grid">
-          <article>
-            <h3>Uma boa</h3>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla
-              corporis facere error enim veritatis, voluptatibus magni, dolor
-              voluptates obcaecati adipisci debitis harum aspernatur omnis
-              culpa, in voluptate alias expedita. Harum?
-            </p>
-          </article>
-          <article>
-            <h3>Bom trabalho</h3>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla
-              corporis facere error enim veritatis, voluptatibus magni, dolor
-              voluptates obcaecati adipisci debitis harum aspernatur omnis
-              culpa, in voluptate alias expedita. Harum?
-            </p>
-          </article>
-          <article>
-            <h3>Ao melhor</h3>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla
-              corporis facere error enim veritatis, voluptatibus magni, dolor
-              voluptates obcaecati adipisci debitis harum aspernatur omnis
-              culpa, in voluptate alias expedita. Harum?
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
+  <section id="pricing" class="white-bg section">
+    <div class="main-content top3-content">
+      <h2>Preços</h2>
+      <p>
+        O lançamento de Macs baseados em silicone da Apple no final do ano
+        passado gerou uma enxurrada de cobertura de notícias e algumas
+        surpresas no desempenho da máquina. Esta postagem detalha algumas
+        informações básicas sobre a experiência de portar o Firefox para rodar
+        nativamente nessas CPUs.
+      </p>
+      <p>
+        Começaremos com algumas informações sobre a transição do Mac e daremos
+        uma visão geral dos componentes internos do Firefox que precisavam
+        saber sobre a nova arquitetura, antes de passar para o conceito de
+        binários universais.
+      </p>
 
-    <section id="pricing" class="white-bg section">
-      <div class="main-content top3-content">
-        <h2>Preços</h2>
-        <p>
-          O lançamento de Macs baseados em silicone da Apple no final do ano
-          passado gerou uma enxurrada de cobertura de notícias e algumas
-          surpresas no desempenho da máquina. Esta postagem detalha algumas
-          informações básicas sobre a experiência de portar o Firefox para rodar
-          nativamente nessas CPUs.
-        </p>
-        <p>
-          Começaremos com algumas informações sobre a transição do Mac e daremos
-          uma visão geral dos componentes internos do Firefox que precisavam
-          saber sobre a nova arquitetura, antes de passar para o conceito de
-          binários universais.
-        </p>
+      <div class="resposive-table">
 
-          <div class="resposive-table">
-            
         <table>
           <caption>Tabela de preços</caption>
 
           <thead>
             <tr>
-            <th>Title1</th>
-            <th>Title2</th>
-            <th>Title3</th>
-            <th>Title4</th>
-            <th>Title5</th>
-          </tr>
+              <th>Title1</th>
+              <th>Title2</th>
+              <th>Title3</th>
+              <th>Title4</th>
+              <th>Title5</th>
+            </tr>
           </thead>
 
           <tbody>
@@ -237,7 +225,7 @@
               <td>Content 3</td>
               <td>Content 4</td>
               <td>Content 5</td>
-              
+
             </tr>
             <tr>
               <td>Content 1</td>
@@ -266,64 +254,64 @@
           </tfoot>
         </table>
       </div>
+    </div>
+  </section>
+
+  <section id="contact" class="intro main-bg section">
+    <div class="main-content intro-content">
+      <div class="intro-text-content">
+        <h2>
+          Janeiro<br />
+          traz o Firefox 85
+        </h2>
+        <p>
+          Para encerrar janeiro, temos o orgulho de apresentar a vocês o
+          lançamento do Firefox 85. Nesta versão, estamos trazendo a você
+          suporte para o : pseudo-classe visível de foco em CSS e devtools
+          associados, e o remoção completa do suporte a Flash do Firefox.
+        </p>
       </div>
-    </section>
+      <div class="intro-img">
+        <img src="/assest/img/java.scrip.svg"
+          alt="Homem branco segurando css, mulher segurando js, homem negro segurando HTML" />
+      </div>
+      <div class="contact-form">
+        <fieldset class="form-grid">
+          <legend>Contact me</legend>
 
-     <section id="contact" class="intro main-bg section">
-      <div class="main-content intro-content">
-        <div class="intro-text-content">
-          <h2>
-            Janeiro<br />
-            traz o Firefox 85
-          </h2>
-          <p>
-            Para encerrar janeiro, temos o orgulho de apresentar a vocês o
-            lançamento do Firefox 85. Nesta versão, estamos trazendo a você
-            suporte para o : pseudo-classe visível de foco em CSS e devtools
-            associados, e o remoção completa do suporte a Flash do Firefox.
-          </p>
-        </div>
-        <div class="intro-img">
-          <img
-            src="/assest/img/java.scrip.svg"
-            alt="Homem branco segurando css, mulher segurando js, homem negro segurando HTML"
-          />
-        </div>
-        <div class="contact-form">
-          <fieldset class="form-grid">
-            <legend>Contact me</legend>
+          <div class="form-group">
+            <label for="first-name">First</label>
+            <input type="text" nome="first-name" id="first-name" placeholder="Your name">
+          </div>
 
-            <div class="form-group">
-              <label for="first-name">First</label>
-              <input type="text" nome="first-name" id="first-name" placeholder="Your name">
-            </div>
+          <div class="form-group">
+            <label for="last-name">Last</label>
+            <input type="text" nome="last-name" id="last-name" placeholder="Your last name">
+          </div>
 
-            <div class="form-group">
-              <label for="last-name">Last</label>
-              <input type="text" nome="last-name" id="last-name" placeholder="Your last name">
-            </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" nome="email" id="email" placeholder="Your E-mail">
+          </div>
 
-            <div class="form-group">
-              <label for="email">E-mail</label>
-              <input type="email" nome="email" id="email" placeholder="Your E-mail">
-            </div>
+          <div class="form-group full-width">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message"></textarea>
 
             <div class="form-group full-width">
-              <label for="message">Message</label>
-              <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message"></textarea>
-
-              <div class="form-group full-width">
-                <button type="submit">Send message</button>
+              <button type="submit">Send message</button>
             </div>
-          </fieldset>
+        </fieldset>
       </div>
-      </div>
-    </section>
+    </div>
+  </section>
 
-    <footer id="footer" class=" footer white-bg">
-      <p><a target="_blank" href="https://github.com/Mic-SA">Feito com <span class="heart">❤</span> por Michel Silva</a></p>
-    </footer>
+  <footer id="footer" class=" footer white-bg">
+    <p><a target="_blank" href="https://github.com/Mic-SA">Feito com <span class="heart">❤</span> por Michel Silva</a>
+    </p>
+  </footer>
 
-    <a class="back-to-top" href="#">➤</a>
-  </body>
+  <a class="back-to-top" href="#">➤</a>
+</body>
+
 </html>
